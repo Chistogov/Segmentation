@@ -1,0 +1,14 @@
+.idea/
+__pycache__/
+venv/
+test/
+hammer/
+ants/
+reflex/train/image_bd
+reflex/train/label_bd
+*.hdf5
+*.pyc
+*.h5py
+*.json
+config.py
+flaskapp.wsgi
