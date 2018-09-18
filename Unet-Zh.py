@@ -15,7 +15,7 @@ data_gen_args = dict(
                     )
 #membrane
 #reflex
-myGene = trainGenerator(1,'membrane/train','image','label',data_gen_args, save_to_dir = None)
+myGene = trainGenerator(5,'membrane/train','image','label',data_gen_args, save_to_dir = None)
 model = unet()
 callbacks = []
 model_checkpoint = ModelCheckpoint('membrane.hdf5', monitor='loss',verbose=1, save_best_only=True)

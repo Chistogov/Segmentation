@@ -137,9 +137,11 @@ def unet(pretrained_weights=None, input_size=(256, 256, 1)):
     # optim = SGD(lr=learning_rate, decay=1e-6, momentum=0.9, nesterov=True)
     model.compile(optimizer=optim, loss='binary_crossentropy', metrics=['accuracy'])
 
-    # model.summary()
+    model.summary()
 
     if (pretrained_weights):
         model.load_weights(pretrained_weights)
 
     return model
+
+# UserWarning: Possible precision loss when converting from float32 to uint16

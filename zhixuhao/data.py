@@ -39,9 +39,13 @@ def adjustData(img,mask,flag_multi_class,num_class):
     elif(np.max(img) > 1):
         img = img / 255
         mask = mask / 255
-        mask[mask > 0.5] = 1
-        mask[mask <= 0.5] = 0
-
+        # mask[mask > 0.5] = 1
+        # mask[mask <= 0.5] = 0
+        # plt.figure(1)
+        # plt.imshow(image.array_to_img(mask[0]))
+        # plt.figure(2+100)
+        # plt.imshow(image.array_to_img(img[0]))
+        # plt.show()
     return (img,mask)
 
 from keras.preprocessing import image
