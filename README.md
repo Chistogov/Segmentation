@@ -7,4 +7,6 @@
 Используемые библиотеки:
 - keras
 - tensorflow
+- numpy
+- skimage
 
