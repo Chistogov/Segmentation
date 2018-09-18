@@ -3,6 +3,8 @@ __pycache__/
 venv/
 hammer/
 ants/
+predict/
+predict_best/
 reflex/train/image_bd
 reflex/train/label_bd
 *.hdf5
